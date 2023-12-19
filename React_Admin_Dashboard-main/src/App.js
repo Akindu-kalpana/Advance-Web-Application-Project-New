@@ -5,7 +5,7 @@ import Login from "./Pages/Login/Login";
 import Users from "./Pages/Users/Users";
 import Products from "./Pages/Products/Products";
 import AddUsers from "./Pages/Users/AddUsers";
-import AddProducts from "./Pages/Products/AddProducts";
+
 import Orders from "./Pages/Orders/Orders";
 import Logout from "./Pages/Logout/Logout";
 import Sales from "./Pages/Orders/Sales";
@@ -153,10 +153,7 @@ function App() {
                       <Route index element={<Users />} />
                       <Route path="/users/new" element={<AddUsers />} />
                     </Route>
-                    <Route path="/products">
-                      <Route index element={<Products />} />
-                      <Route path="/products/new" element={<AddProducts />} />
-                    </Route>
+                    
                     <Route path="*" element={<PageNotFound />} />
                   </Route>
                 </Routes>

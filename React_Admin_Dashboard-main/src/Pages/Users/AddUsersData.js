@@ -1,4 +1,4 @@
-// ------------------------------------------
+
 // User data list
 export const userListTableColumns = [
   {

@@ -137,15 +137,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="search_and_settings_div">
-          {/* <div className="search_div">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="search_input"
-              onChange={handleSearch}
-            />
-            <SearchIcon />
-          </div> */}
+          
           <div
                 className="item notification_item"
                 onClick={handleNotification}

@@ -1,17 +1,12 @@
-import React, { useState,useEffect, useContext } from "react";
 import axios from "axios";
-import { ThemeContext, LoaderContext } from "../../App";
 import { motion } from "framer-motion";
-import Sidebar from "../../Components/Sidebar/Sidebar";
-import Navbar from "../../Components/Navbar/Navbar";
-import Card from "../../Components/Card/Card";
-import SummaryCards from "../../Components/Card/SummaryCards";
-import Chart from "../../Components/Chart&Table/Chart";
-import Loader from "../../Reusable Components/Loader";
-import TransactionDataTable from "../../Components/Chart&Table/TransactionDataTable";
-import { transactionTableData } from "../../Components/Chart&Table/TransactionData";
-import { data } from "../../Components/Chart&Table/ChartData";
+import React, { useContext, useEffect, useState } from "react";
+import { LoaderContext, ThemeContext } from "../../App";
 import "../../App.sass";
+import TransactionDataTable from "../../Components/Chart&Table/TransactionDataTable";
+import Navbar from "../../Components/Navbar/Navbar";
+import Sidebar from "../../Components/Sidebar/Sidebar";
+import Loader from "../../Reusable Components/Loader";
 import "./Home.sass";
 
 const Home = () => {
